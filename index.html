@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://www.paypal.com/sdk/js?components=messages,buttons,card-fields,applepay&enable-funding=paylater&buyer-country=GB&currency=GBP&client-id=AQwumBRXKmhM4J0Vad0mP58qnXwePHPVjuLIzMY2NMv0x5-EFGA3tOwW-wqQSvqBwnn2YLnqlKyBjeaw"></script>
+		<script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+		<script src="/js/paypal-advanced-checkout.js" defer></script>
+		<meta charset="UTF-8">
+		<title>
+			Payment
+		</title>
+	</head>
+	<body>
+		<div class="paypal-checkout">
+			<div class="container margtop20 hidden">
+				<div class="alert alert-warning nomargin">
+					<span id="result-message"></span>
+				</div>
+			</div>
+			<br>
+			<div id="paypal-button-container" class="paypal-button-container"></div>
+			<div style="padding-bottom: 13px;" id="applepay-container" class="row"></div>
+			<!-- Containers for Card Fields hosted by PayPal -->
+			<div id="card-form" class="card_container">
+				<hr>
+				<div id="card-name-field-container"></div>
+				<div id="card-number-field-container"></div>
+				<div id="card-expiry-field-container"></div>
+				<div id="card-cvv-field-container"></div>
+				<button id="card-field-submit-button" class="btn btn-primary full-width" type="button">
+					Pay now with Card
+				</button>
+			</div>
+		</div>
+	</body>
+</html>
