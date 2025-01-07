@@ -323,7 +323,7 @@ let check_applepay = async () => {
       countryCode: global_apple_pay_config.countryCode,
       merchantCapabilities: global_apple_pay_config.merchantCapabilities,
       supportedNetworks: global_apple_pay_config.supportedNetworks,
-      currencyCode: "USD",
+      currencyCode: "GBP",
       requiredShippingContactFields: ["name", "phone", "email", "postalAddress"],
       requiredBillingContactFields: ["postalAddress"],
       total: {
